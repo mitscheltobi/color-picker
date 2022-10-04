@@ -1,0 +1,60 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #161616;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.colorBox{
+  width: 60vw;
+  height: 40vh;
+  background-color: white;
+  border: none;
+  border-radius: 1rem;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.answerButtonWrapper{
+  display: flex;
+  flex-direction: row;
+  width: 60vw;
+  height: 5vh;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.answerButton{
+  width: 32%;
+  border: none;
+  border-radius: .5rem;
+  background-color: #DFDFDF;
+  cursor: pointer;
+  font-size: min(3vw, 2rem);
+  color: #161616;
+  font-weight: 700;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #FF6565;
+  }
+  100% {
+    background-color: #DFDFDF;
+  }
+}
+
+.guessedAnim{
+  animation: pulse 1s ease-in-out;
+}
